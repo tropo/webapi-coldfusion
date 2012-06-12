@@ -1,6 +1,6 @@
 <!-- 
 	This sample app will answer a call, ask the caller to say or type their 4 digit year of birth,
-     and then will returns the value back to the caller.  Basically shows you how to consume a Tropo
+     and then returns the value back to the caller.  Basically shows you how to consume a Tropo
      WebAPI JSON payload in ColdFusion, assign the payload to a variable and then access the values 
      inside a ColdFusion document.  This sample app was developed by Shane Smith and Johnny Diggz, 
      (Shane did all the actual coding, Diggz just copied and pasted stuff and bugged Shane).
