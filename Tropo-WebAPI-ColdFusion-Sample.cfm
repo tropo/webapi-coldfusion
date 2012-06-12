@@ -23,7 +23,7 @@
      a database or something much more elegant than a text file, but we'll leave that elegance up to you.  
 --->
 
-<CFSET myfilepath="c:\localfolder">
+<CFSET myfilepath="c:\localfolder\">
 
 <!--- The following script will consume Tropo WebAPI JSON and make it digestible by ColdFusion.  You could 
      move this somewhere else and include it with a CFInclude --->
@@ -117,7 +117,7 @@ return theData; }
 <CFOUTPUT>#outputlog#</CFOUTPUT>
 <cfcatch>
 <cffile action="append"
-    file="#myfilepath#\log.txt"
+    file="#myfilepath#log.txt"
     output="#cfcatch#">
 </cfcatch>
 </cftry>
