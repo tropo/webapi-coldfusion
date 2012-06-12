@@ -1,8 +1,8 @@
-<!-- CFTropoJSON written by Shane Smith and Johnny Diggz (let's face it, mostly Shane) 
+<!--- CFTropoJSON written by Shane Smith and Johnny Diggz (let's face it, mostly Shane) 
  	 This is presented as-is, and while we've tested it with Tropo Web-API, it's not 
-	 officially supported so you're on your own :) -->
+	 officially supported so you're on your own :) --->
 
-<!-- The following script will consume Tropo WebAPI JSON and make it digestible by ColdFusion -->
+<!--- The following script will consume Tropo WebAPI JSON and make it digestible by ColdFusion --->
 
 <cfscript>
 function CFTropoJSON(content) {
@@ -12,11 +12,11 @@ theData=DeserializeJSON(theData);
 return theData; }
 </cfscript>
 
-<!-- The following puts Tropo WebAPI JSON into the variable "theJSON" -->
+<!--- The following puts Tropo WebAPI JSON into the variable "theJSON" --->
 
 <CFSET theJSON=CFTropoJSON(GetHttpRequestData().content)>
 
-<!-- 
+<!--- 
 
 	To evaluate variables inside theJSON payload, you address them the following way in ColdFusion:
 
@@ -32,4 +32,4 @@ return theData; }
 	More info about Tropo session object here: https://www.tropo.com/docs/webapi/session.htm
 	and the Tropo WebAPI docs: https://www.tropo.com/docs/webapi/new_tropo_web_api_overview.htm
 	
--->
+--->
