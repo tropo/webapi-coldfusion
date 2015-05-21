@@ -30,7 +30,8 @@
 
 <cfscript>
 function CFTropoJSON(content) {
-theData=REReplace(tostring(content), "^\s*[[:word:]]*\s*\(\s*","");
+theData=Replace(tostring(content),"sip:", "sip_","all");
+theData=REReplace(theData, "^\s*[[:word:]]*\s*\(\s*","");
 theData=REReplace(theData, "\s*\)\s*$", "");
 theData=DeserializeJSON(theData);
 return theData; }
